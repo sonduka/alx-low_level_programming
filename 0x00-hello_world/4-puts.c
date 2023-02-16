@@ -1,5 +1,5 @@
-#!/bin/bash
 #include <stdio.h>
+
 /**
  * main -Entry point
  * Description: Print "Programming is like building a multilingual puzzle
