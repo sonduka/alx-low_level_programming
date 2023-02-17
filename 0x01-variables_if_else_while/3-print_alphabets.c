@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - Entry point
+ * main - Entry point
  * Description: Alphabet game - CAPS & Lowers
  * Return: 0
  */
