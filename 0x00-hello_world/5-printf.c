@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *Main- Entry point
- *Description: Print with proper grammar, but the outcome is a piece of art,
- *Return 0 (success)
+ *Main- Hello, printf
+ *Description: using printf to print ,
+ *Return: 0
  */
 
 int main(void)
