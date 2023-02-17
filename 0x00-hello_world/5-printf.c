@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- *Main -  Entry point
- *This function prints a message to the console
+ *Main -  This function prints a message to the console
  *Return: Always 0 (Success)
  */
 
