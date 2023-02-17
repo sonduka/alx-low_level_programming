@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *Main -  Hello, printf
- *Description: using printf to print ,
- *Return: 0
+ *Main -  Entry point
+ *This function prints a message to the console
+ *Return: Always 0 (Success)
  */
 
 int main(void)
