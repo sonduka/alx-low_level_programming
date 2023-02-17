@@ -2,7 +2,7 @@
 
 /**
  * Main - Entry point
- * Description: Alphabet game 
+ * Description: Alphabet game - CAPS & Lowers
  * Return: 0
  */
 
