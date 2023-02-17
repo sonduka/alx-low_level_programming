@@ -1,7 +1,9 @@
 #include <stdio.h>
+
 /**
- *Main -  This function prints a message to the console
- *Return: Always 0 (Success)
+ * main - Hello, printf
+ * Description: Using printf to print text
+ * Return: 0
  */
 
 int main(void)
