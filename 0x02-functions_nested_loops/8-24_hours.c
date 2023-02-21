@@ -2,7 +2,6 @@
 /**
  * jack_bauer - prints signs
  * Description - print sign
- * @n:the character to check
  * Return: 0
  */
 
@@ -12,7 +11,7 @@ void jack_bauer(void)
 
 	for (hour = 0; hour < 24; hour++)
 	{
-	for (minute = 0; minute < 60; minute ++)
+	for (minute = 0; minute < 60; minute++)
 	{
 	 _putchar('0' + (hour / 10));
 	 _putchar('0' + (hour % 10));
