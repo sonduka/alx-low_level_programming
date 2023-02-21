@@ -1,14 +1,9 @@
-#include <stdio.h>
+#include 'main.h'
 /**
  * main - check the code
  * Description- nested loops
  * return: Always 0
  */
-int _putchar(char c)
-{
-	return putchar(c);
-}
-
 int main()
 {
 	putchar('_');	
