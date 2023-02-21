@@ -2,7 +2,7 @@
 /**
  * print_last_digit - prints signs
  * Description - print sign
- * @r:the character to check
+ * @n:the character to check
  * Return: 0
  */
 int print_last_digit(int n)
