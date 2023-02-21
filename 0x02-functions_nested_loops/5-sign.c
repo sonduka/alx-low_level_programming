@@ -2,6 +2,7 @@
 /**
  * print_sign - prints signs
  * Description - print sign
+ * @n: the character to check 
  * Return: 0
  */
 
