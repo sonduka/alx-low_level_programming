@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * puts_half - Entry point
  * Description: Prints half of a string
