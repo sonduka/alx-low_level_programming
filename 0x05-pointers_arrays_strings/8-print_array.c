@@ -3,7 +3,8 @@
 /**
  * print_array - Entry point
  * Description: Prints half of a string
- * @str: Char
+ * @a: Char
+ * @n: char
  * Return: char
  */
 
