@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts_half - Entry point
+ * print_array - Entry point
  * Description: Prints half of a string
  * @str: Char
  * Return: char
