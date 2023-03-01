@@ -1,14 +1,11 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
  * _strcat - concatenate two strings
- * Description - concatenate dest to src
- * @dest - character
- * @src - character
- *
- * Resturn: 0
+ * Description:  concatenate dest to src
+ * @dest: character
+ * @src: character
+ * Return: 0
  *
  */
 
