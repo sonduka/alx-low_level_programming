@@ -1,48 +1,27 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 10
-#define ASCII_OFFSET 48
-#define LOWERCASE_OFFSET 97
-#define UPPERCASE_OFFSET 65
-
 /**
- * main - random password generator
- * Description  - generates random pasowrd
- * Return: password
+ * main - Entry point
+ * Description: generates random passwords for 101-crackme
+ * Return: void
  */
 
-int main(void) 
+int main(void)
 {
-	char password[PASSWORD_LENGTH + 1];
-	int i;
+	int r = 0, c = 0;
+	time_t t;
 
-	srand(time(NULL));
-
-	for (i = 0; i < PASSWORD_LENGTH; i++)
+	srand((unsigned int) time(&t));
+	while (c < 2772)
 	{
-		int r = rand() % 62;
-
-		if (r < 10)
-		{
-			password[i] = r + ASCII_OFFSET;
-		}
-
-		else if (r < 36)
-		{
-			password[i] = r - 10 + UPPERCASE_OFFSET;
-		}
-		else 
-		{
-			password[i] = r - 36 + LOWERCASE_OFFSET;
-		}
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c", r);
 	}
-	password[PASSWORD_LENGTH] = '\0';
-
-	printf("%s\n", password);
-
+	printf("%c\n", (2772 - c));
 	return (0);
 }
-
