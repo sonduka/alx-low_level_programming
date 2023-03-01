@@ -39,7 +39,7 @@ int main(void)
 			password[i] = r - 36 + LOWERCASE_OFFSET;
 		}
 	}
-	password[PASSWROD_LENGTH] = '\0';
+	password[PASSWORD_LENGTH] = '\0';
 
 	printf("%s\n", password);
 
