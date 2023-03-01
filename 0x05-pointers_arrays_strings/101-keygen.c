@@ -4,6 +4,9 @@
 #include <time.h>
 
 #define PASSWORD_LENGTH 10
+#define ASCII_OFFSET 48
+#define LOWERCASE_OFFSET 97
+#define UPPERCASE_OFFSET 65
 
 /**
  * main - random password generator
