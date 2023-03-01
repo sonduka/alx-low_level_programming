@@ -13,27 +13,33 @@
 
 int main(void) 
 {
+	char password[PASSWORD_LENGTH + 1];
 	int i;
 
-	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!#$%^&*()_+-=[]{};:,.<>?";
+	srand(time(NULL));
 
-		srand(time(NULL));
-
-	char password[PASSWORD_LENGTH + 1];
-	for (int i = 0; i < PASSWORD_LENGTH; i++)
+	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
-		int index = rand() % (sizeof(charset) - 1);
-		password[i] = charset[index];
-	
+		int r = rand() % 62;
 
-	password[i] = charset[index];
+		if (r < 10)
+		{
+			password[i] = r + ASCII_OFFSET;
+		}
+
+		else if (r < 36)
+		{
+			password[i] = r - 10 + UPPERCASE_OFFSET;
+		}
+		else 
+		{
+			password[i] = r - 36 + LOWERCASE_OFFSET;
+		}
 	}
+	password[PASSWROD_LENGTH] = '\0';
 
-password[PASSWORD_LENGTH] = '\0';
+	printf("%s\n", password);
 
-printf("Your new password is: %s\n", password);
-
-return (0);
-
+	return (0);
 }
 
