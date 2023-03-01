@@ -5,12 +5,27 @@
 /**
  * _strcat - concatenate two strings
  * Description - concatenate dest to src
+ * @dest - character
+ * @src - character
  *
  * Resturn: 0
  *
  */
 
-char _strcat(char* dest, char* src)
+char *_strcat(char *dest, char *src)
 {
-	return (strcat(dest, src));
+	char *p = dest;
+
+	while (*p != '\0')
+	{
+		p++;
+	}
+	while (*src != '\0')
+	{
+		*p = *src;
+		p++;
+		src++;
+	}
+	*p = '\0';
+	return (dest);
 }
