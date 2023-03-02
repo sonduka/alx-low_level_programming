@@ -5,7 +5,8 @@
  * Description - copy string1 to string 2
  * @src: character
  * @dest: character
- * Return: dest
+ * @n: integer
+ * Return: string
  */
 
 char* _strncpy(char* dest, char* src, int n)
@@ -23,5 +24,5 @@ char* _strncpy(char* dest, char* src, int n)
 		n--;
 	}
 
-	return dest;
+	return (dest);
 }
