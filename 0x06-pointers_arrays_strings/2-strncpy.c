@@ -9,9 +9,9 @@
  * Return: string
  */
 
-char *_strncpy(char* dest, char* src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	char* p = dest;
+	char *p = dest;
 	while (*src != '\0' && n > 0)
 	{
 		*p++ = *src++;
