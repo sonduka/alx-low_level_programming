@@ -1,13 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: always 0.
+ * _puts_recursion - Entry point
+ * Description: Prints a string, followed by a new line using recursion
+ * @s: Character
  */
 
-int main(void)
+void _puts_recursion(char *s)
 {
-	_puts_recursion("Puts with recursion");
-	return (0);
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
