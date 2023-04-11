@@ -1,18 +1,27 @@
-
 #include "main.h"
 
 /**
- * _isupper - Entry point
- * Description: Checks for uppercase character
- * @c: Integer variable
- * Return: 1 if uppercase, 0 if not
+ * *_strcat - Entry point
+ * Description: Concatenates two strings
+ * @dest: Character
+ * @src: Character
+ * Return: char
  */
 
-int _isupper(int c)
+char *_strcat(char *dest, char *src)
 {
-	if (c >= 65 && c <= 90)
-		return (1);
-	else
-		return (0);
-}
+	char *p = dest;
 
+	while (*p != '\0')
+	{
+		p++;
+	}
+	while (*src != '\0')
+	{
+		*p = *src;
+		p++;
+		src++;
+	}
+	*p = '\0';
+	return (dest);
+}
