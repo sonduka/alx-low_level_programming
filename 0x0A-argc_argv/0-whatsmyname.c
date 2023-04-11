@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * main - entry point of the program
- * Description - prints the name of the program
- * @argc - number of command line arguments
- * @argv -  array of command line arguments
+ * main - entry point
+ * Description: prints the name of the program
+ * @argc: Number of command line arguments
+ * @argv: Array of command line arguments
  *
- * Return - 0
+ * Return: 0
  */
 
 int main (int argc, char *argv[])
